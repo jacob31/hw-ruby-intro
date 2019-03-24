@@ -45,10 +45,10 @@ describe '#binary_multiple_of_4?' do
   end
   it 'classifies valid binary numbers [30 points]' , points: 30 do
     %w[1010101010100 0101010101010100 100 0].each do |string|
-      expect(binary_multiple_of_4?(string)).to be_truthy,  "Incorrect results for input: \"#{string}\""
+      expect(binary_multiple_of_4?(string)).to be_truthy,  "Incorrect results for input: #{string}"
     end
     %w[101 1000000000001].each do |string|
-      expect(binary_multiple_of_4?(string)).not_to be_truthy,  "Incorrect results for input: \"#{string}\""
+      expect(binary_multiple_of_4?(string)).not_to be_truthy,  "Incorrect results for input: #{string}"
     end
   end
   it 'rejects invalid binary numbers [10 points]' , points: 10 do
